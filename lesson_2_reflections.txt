@@ -6,3 +6,22 @@ It creates a .git directory to track future commits.  git init is neccessary to 
 
 The staging area is where files are placed, with changes, prior to being committed.  Files in the staging area can't be edited; but they can be deleted from the staging, or newly updated files from the working area can be put into the staging area.
 
+3.  How can you use the staging area to make sure you have one commit per logical change?
+
+Once you put something in the staging area, you can run git diff --staged to compare what's in the staging area and what's in the repository.  Based on that result, you can tell if you're making one logical change.
+
+4.  What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+When you're introducing a new feature, you can put it in a branch of its own while keeping the master branch unchanged.
+
+5.  How do the diagrams help you visualize the branch structure?
+
+They show the parents of each branch and which branch to check out based on which feature/fix/bug one wants to work on.
+
+6.  What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+The new merged branch retains the commits for both branches, with the commits for each branch being interleaved according to time stamp.  The merge becomes the tip of one of the branches, and the unneeded branch name can be deleted.
+
+7.  What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+An automatic merge takes the guess work out of what to merge, though it might merge two branches in a way you don't want.  Manually merging allows you to make the merge captures the right changes.
