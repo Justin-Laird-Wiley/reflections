@@ -8,3 +8,9 @@ repository?
 
 Because you might be working on changes locally that could be overwritten if Git was automatically pulling from GitHub on an
 arbitrary timetable.
+
+3.  Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+Forks are copies in GitHub where a repository in one user's account is copied to another user's account; a clone is a copy of
+a remote repository using https:// onto your local machine; a branch is a working copy of the master branch on your local
+machine for the purpose of testing new code, etc.
