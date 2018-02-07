@@ -20,3 +20,8 @@ Forks are copies in GitHub where a repository in one user's account is copied to
 another user's account; a clone is a copy of a remote repository using https:// onto
 your local machine; a branch is a working copy of the master branch on your local
 machine for the purpose of testing new code, etc.
+
+4.  What is the benefit of having a copy of the last known state of the remote stored locally?
+
+It allows one to work off-line if necessary; and to easily compare the local master
+with state of the remote master.
